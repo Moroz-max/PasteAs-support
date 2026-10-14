@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — PasteAs</title><meta name="description" content="PasteAs, a clipboard history manager for the Mac.">
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1d1d1f;--mute:#6e6e73;--accent:#0a64d8;--line:#d2d2d7}
+@media(prefers-color-scheme:dark){:root{--bg:#1c1c1e;--fg:#f5f5f7;--mute:#98989d;--accent:#4da3ff;--line:#3a3a3c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main,footer{max-width:760px;margin:0 auto;padding:0 20px}
+header{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;padding-top:20px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+header .brand{font-weight:700;font-size:19px;color:var(--fg);text-decoration:none;margin-right:auto}
+header a{color:var(--accent);text-decoration:none}
+.lang button{font:inherit;font-size:14px;color:var(--fg);background:none;border:1px solid var(--line);padding:3px 11px;cursor:pointer}
+.lang button:first-child{border-radius:8px 0 0 8px}.lang button:last-child{border-radius:0 8px 8px 0;border-left:0}
+.lang button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+main{padding-top:8px;padding-bottom:40px}h1{font-size:32px;line-height:1.2;margin:1.2em 0 .4em}
+h2{font-size:21px;margin:1.6em 0 .3em}p{margin:.6em 0}a{color:var(--accent)}code{font:15px ui-monospace,Menlo,monospace;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:5px}
+footer{padding-top:16px;padding-bottom:40px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+.card{border:1px solid var(--line);border-radius:14px;padding:4px 20px 16px;margin:20px 0}
+[data-lang]{display:none}[data-lang].on{display:block}
+
+.navgroup.on{display:flex;gap:20px}</style></head>
+<body><header><a class="brand" href="index.html">PasteAs</a><span data-lang="en" class="navgroup"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></span><span data-lang="ru" class="navgroup"><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Соглашение</a><a href="support.html">Поддержка</a></span>
+<span class="lang"><button data-set="en" aria-pressed="true">EN</button><button data-set="ru" aria-pressed="false">RU</button></span></header>
+<main><div data-lang="en" class="on"><h1>PasteAs Privacy Policy</h1>
+<p>PasteAs is a clipboard history manager. This policy explains what it does with the data you copy.</p>
+<h2>Where your data lives</h2>
+<p>By default your clipboard history is stored only on your Mac, in a local database in ~/Library/Application Support/PasteAs (inside the app's own container in the App Store version). PasteAs has no accounts, no servers of its own, no analytics, no advertising and no tracking. It makes no network connections of its own, with one exception: when you drop a picture from a web page onto the panel and the page does not hand over the picture itself, PasteAs downloads that one picture from its address.</p>
+<h2>What is saved</h2>
+<p>Text, links, rich text, images and files that you copy. For files, only links to them are saved, never their contents. PasteAs does not save items that apps mark as concealed or transient (such as passwords from password managers), and it ignores the apps on your exclusion list in Settings.</p>
+<h2>Text on pictures</h2>
+<p>To let you search pictures by the words written on them and by what they show (for example a cat or a beach), PasteAs reads those words with the text recognition built into macOS and recognises the contents with the image analysis built into macOS, on your Mac. The recognised words and labels are kept in the same local database as the picture and are used only for search; they never leave your Mac. For English text, PasteAs also works out a numerical summary of its meaning with the language models built into macOS, so that related items can be found; it is kept in the same local database and used only for search. You can switch this off in Settings, under History.</p>
+<h2>Screenshots</h2>
+<p>Screenshots are added to the history only if you switch on "Add screenshots to history" in Settings. PasteAs then reads the folder where macOS saves screenshots, and macOS or PasteAs may ask you to allow or choose that folder. You can switch it off at any time.</p>
+<h2>Accessibility permission</h2>
+<p>PasteAs asks for the Accessibility permission only to send the paste command (⌘V) to the app you are working in. It does not read the contents of other apps through this permission.</p>
+<h2>Keeping and deleting data</h2>
+<p>History is trimmed automatically by the age and size limits you choose in Settings, and you can clear it at any time with "Clear history". Items you delete are erased from the database. Removing the app and the folder above removes all data.</p>
+<h2>Purchases</h2>
+<p>PasteAs Pro is sold through the App Store. Payment, subscriptions and the free trial are handled entirely by Apple. PasteAs only learns from the App Store whether a purchase is active; it never sees your payment details, and it sends nothing about you or your history to its author.</p>
+<h2>iCloud</h2>
+<p>Sync through iCloud is off by default. If you switch it on in Settings → Sync, PasteAs keeps a copy of your recent history (text, links, colours and pictures, up to the size you choose), your pinboards, snippets and the list of excluded apps in your own private iCloud storage under your Apple ID, so your other Macs signed in to the same Apple ID can show them. Files you copy (only their paths), passwords and other items PasteAs recognises as secrets, and screenshots (unless you switch that on) are never sent. Items you remove yourself are removed from iCloud and from your other Macs too; items that only leave this Mac's history because of the automatic limits stay on the other Macs. The developer cannot see or access this data; it is governed by Apple's terms and counts against your iCloud storage. You can switch sync off at any time.</p>
+<h2>Shared pinboards</h2>
+<p>Shared pinboards need iCloud sync and are optional. When you share a pinboard, PasteAs places a copy of that pinboard (its name and colour, its items and snippets) in an iCloud share owned by you, the owner. Everyone with access, the people you invite, sees and can use what is in the pinboard; the owner chooses whether each person may only view it or also make changes, and the owner can stop sharing or remove a person at any time, after which the pinboard and its items disappear from that person's Mac. Items you put into a shared pinboard are copies; the originals in your history are not shared. Files, passwords and other secrets are never put into a shared pinboard. Sharing is handled by Apple's iCloud: the invitation, the people and their access are managed by Apple, the shared data counts against the owner's iCloud storage, and the developer cannot see or access any of it. When you invite someone, the e-mail address or phone number you typed or chose in your Contacts is sent only to iCloud, to find that person's Apple Account; PasteAs does not store it or send it anywhere else.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new text will appear here in a future version of the app.</p></div><div data-lang="ru"><h1>Политика конфиденциальности PasteAs</h1>
+<p>PasteAs — менеджер истории буфера обмена. Здесь описано, что приложение делает с данными, которые вы копируете.</p>
+<h2>Где хранятся данные</h2>
+<p>По умолчанию история буфера обмена хранится только на вашем Mac, в локальной базе в ~/Library/Application Support/PasteAs (в версии из App Store: внутри собственного контейнера приложения). У PasteAs нет учётных записей, собственных серверов, аналитики, рекламы и слежки. Собственных сетевых соединений приложение не устанавливает, кроме одного случая: когда вы перетаскиваете на панель картинку с веб-страницы, а страница не передаёт саму картинку, PasteAs скачивает эту одну картинку по её адресу.</p>
+<h2>Что сохраняется</h2>
+<p>Текст, ссылки, форматированный текст, изображения и файлы, которые вы копируете. Для файлов сохраняются только ссылки на них, но не их содержимое. PasteAs не сохраняет то, что приложения помечают как скрытое или временное (например, пароли из менеджеров паролей), и игнорирует приложения из списка исключений в настройках.</p>
+<h2>Текст на картинках</h2>
+<p>Чтобы картинки можно было искать по написанным на них словам и по тому, что на них изображено (например, кот или пляж), PasteAs распознаёт эти слова встроенным в macOS распознаванием текста, а содержимое — встроенным в macOS анализом изображений, на вашем Mac. Найденные слова и метки хранятся в той же локальной базе, что и картинка, и используются только для поиска; они не покидают ваш Mac. Для английского текста PasteAs также вычисляет числовое описание его смысла встроенными в macOS языковыми моделями, чтобы находить связанные записи; оно хранится в той же локальной базе и используется только для поиска. Это можно выключить в настройках, на странице «История».</p>
+<h2>Скриншоты</h2>
+<p>Скриншоты попадают в историю, только если вы включили «Добавлять скриншоты в историю» в настройках. Тогда PasteAs читает папку, куда macOS сохраняет скриншоты, и macOS или PasteAs могут попросить вас разрешить доступ или выбрать эту папку. Эту опцию можно выключить в любой момент.</p>
+<h2>Разрешение «Универсальный доступ»</h2>
+<p>PasteAs просит это разрешение только для того, чтобы отправить команду вставки (⌘V) в приложение, в котором вы работаете. Читать содержимое других приложений через это разрешение PasteAs не будет.</p>
+<h2>Хранение и удаление данных</h2>
+<p>История автоматически сокращается по лимитам срока и размера, которые вы выбираете в настройках, и её можно очистить в любой момент кнопкой «Очистить историю». Удалённые записи стираются из базы. Удаление приложения и папки, указанной выше, удаляет все данные.</p>
+<h2>Покупки</h2>
+<p>PasteAs Pro продаётся через App Store. Оплата, подписки и бесплатный пробный период полностью обрабатываются Apple. PasteAs узнаёт от App Store только, действует ли покупка; платёжные данные приложению недоступны, и оно ничего не отправляет автору ни о вас, ни о вашей истории.</p>
+<h2>iCloud</h2>
+<p>Синхронизация через iCloud по умолчанию выключена. Если вы включите её в Настройках → Синхронизация, PasteAs хранит копию вашей недавней истории (текст, ссылки, цвета и картинки, в пределах выбранного размера), пинборды, сниппеты и список исключённых приложений в вашем личном хранилище iCloud под вашим Apple ID, чтобы другие ваши Mac с тем же Apple ID могли их показывать. Файлы (только пути к ним), пароли и другие записи, которые PasteAs считает секретными, и скриншоты (пока вы это не включите) никогда не отправляются. Записи, которые вы удалили сами, удаляются из iCloud и с других ваших Mac; записи, которые уходят из истории этого Mac только по автоматическим лимитам, остаются на других Mac. Разработчик не видит эти данные и не имеет к ним доступа; на них действуют условия Apple, и они занимают место в вашем iCloud. Синхронизацию можно выключить в любой момент.</p>
+<h2>Общие пинборды</h2>
+<p>Общие пинборды требуют синхронизации iCloud и не обязательны. Когда вы делитесь пинбордом, PasteAs помещает его копию (название и цвет, записи и сниппеты) в общий доступ iCloud, владельцем которого являетесь вы. Все, у кого есть доступ, — приглашённые вами люди, — видят и могут использовать содержимое пинборда; владелец решает, может ли каждый только смотреть или ещё и вносить изменения, и в любой момент может прекратить общий доступ или убрать человека, после чего пинборд и его записи исчезнут с Mac этого человека. Записи, которые вы кладёте в общий пинборд, — копии; оригиналы в вашей истории не публикуются. Файлы, пароли и другие секреты в общий пинборд не попадают. Общим доступом управляет iCloud от Apple: приглашения, людей и их права ведёт Apple, общие данные занимают место в iCloud владельца, а разработчик не видит их и не имеет к ним доступа. Когда вы приглашаете человека, введённый или выбранный в Контактах email или номер телефона отправляется только в iCloud, чтобы найти его Apple Account; PasteAs не хранит его и никуда больше не отправляет.</p>
+<h2>Изменения</h2>
+<p>Если эта политика изменится, новый текст появится здесь в одной из следующих версий приложения.</p></div></main>
+<footer>© 2026 NextGenSystems L.L.C.</footer>
+<script>
+(function(){
+  var saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+  var q=(location.search.match(/lang=(en|ru)/)||[])[1]||(location.hash.match(/^#(en|ru)$/)||[])[1];
+  var lang=q||saved||((navigator.language||'en').slice(0,2)==='ru'?'ru':'en');
+  function set(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('[data-lang]').forEach(function(e){e.classList.toggle('on',e.dataset.lang===l)});
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===l)});
+    try{localStorage.setItem('lang',l)}catch(e){}
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){b.onclick=function(){set(b.dataset.set)}});
+  set(lang);
+})();
+</script></body></html>

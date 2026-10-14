@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support — PasteAs</title><meta name="description" content="PasteAs, a clipboard history manager for the Mac.">
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1d1d1f;--mute:#6e6e73;--accent:#0a64d8;--line:#d2d2d7}
+@media(prefers-color-scheme:dark){:root{--bg:#1c1c1e;--fg:#f5f5f7;--mute:#98989d;--accent:#4da3ff;--line:#3a3a3c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main,footer{max-width:760px;margin:0 auto;padding:0 20px}
+header{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;padding-top:20px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+header .brand{font-weight:700;font-size:19px;color:var(--fg);text-decoration:none;margin-right:auto}
+header a{color:var(--accent);text-decoration:none}
+.lang button{font:inherit;font-size:14px;color:var(--fg);background:none;border:1px solid var(--line);padding:3px 11px;cursor:pointer}
+.lang button:first-child{border-radius:8px 0 0 8px}.lang button:last-child{border-radius:0 8px 8px 0;border-left:0}
+.lang button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+main{padding-top:8px;padding-bottom:40px}h1{font-size:32px;line-height:1.2;margin:1.2em 0 .4em}
+h2{font-size:21px;margin:1.6em 0 .3em}p{margin:.6em 0}a{color:var(--accent)}code{font:15px ui-monospace,Menlo,monospace;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:5px}
+footer{padding-top:16px;padding-bottom:40px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+.card{border:1px solid var(--line);border-radius:14px;padding:4px 20px 16px;margin:20px 0}
+[data-lang]{display:none}[data-lang].on{display:block}
+
+.navgroup.on{display:flex;gap:20px}</style></head>
+<body><header><a class="brand" href="index.html">PasteAs</a><span data-lang="en" class="navgroup"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></span><span data-lang="ru" class="navgroup"><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Соглашение</a><a href="support.html">Поддержка</a></span>
+<span class="lang"><button data-set="en" aria-pressed="true">EN</button><button data-set="ru" aria-pressed="false">RU</button></span></header>
+<main><div data-lang="en" class="on"><h1>PasteAs support</h1>
+<p><strong>Contact:</strong> <a href="mailto:PasteAs@proton.me">PasteAs@proton.me</a> (we answer within a few days; please say your macOS version and what you were doing).</p>
+<h2>Common questions</h2>
+<p><strong>Pasting does not work, the item only gets copied.</strong><br>
+PasteAs presses ⌘V for you, and macOS requires the <em>Accessibility</em> permission for that. Open System Settings → Privacy &amp; Security → Accessibility and switch PasteAs on. Without it you can still paste by pressing ⌘V yourself after choosing a card.</p>
+<p><strong>The keyboard shortcut does not open the history.</strong><br>
+The default is ⇧⌘V. Another app may use the same keys: change the shortcut in Settings → Shortcuts.</p>
+<p><strong>Screenshots do not appear in the history.</strong><br>
+Switch on "Add screenshots to history" in Settings → General and choose the folder where macOS saves your screenshots when asked.</p>
+<p><strong>Something I copied was not saved.</strong><br>
+Passwords from password managers and anything apps mark as secret are never saved. Check the exclusion list in Settings → App Rules, and that recording is not paused (menu-bar icon).</p>
+<p><strong>How do I see, cancel or change my subscription?</strong><br>
+Open System Settings → your name → Media &amp; Purchases → Subscriptions, or press "Manage Subscription" in PasteAs → Settings → PasteAs Pro. The free trial and renewals are handled by Apple.</p>
+<p><strong>How do I sync my history between my Macs?</strong><br>
+Settings → Sync → "Sync with iCloud", on each Mac signed in to the same Apple Account. It keeps your recent history (up to the size you choose), pinboards, snippets and the list of excluded apps. Files you copy, passwords and other secrets are never synced. Items you delete are deleted on your other Macs too.</p>
+<p><strong>How do I share a pinboard?</strong><br>
+Turn on sync, then right-click the pinboard tab → "Share Pinboard…". Type an e-mail address or phone number (or pick a contact), choose "Can edit" or "View only", and press "Invite". Send the invitation link with "Copy Link" or "Messages". The other person needs PasteAs with sync on and PasteAs Pro. Items you add to a shared pinboard are copies; the originals stay in your history.</p>
+<p><strong>How do I stop sharing, remove someone or leave a shared pinboard?</strong><br>
+Owner: right-click the pinboard tab → "Manage Sharing…" to remove a person or "Stop Sharing" (the pinboard stays with you). Participant: right-click the pinboard tab → "Leave Pinboard"; it is removed from your Mac.</p>
+<p><strong>What happens to a shared pinboard when my trial ends?</strong><br>
+PasteAs locks: you cannot view or change shared pinboards until you buy PasteAs Pro. The people you share with keep their access.</p>
+<p><strong>Sync does not work or says "Syncing…" for a long time.</strong><br>
+Check that you are signed in to iCloud and that iCloud has free space. On a metered connection (for example, an iPhone Personal Hotspot) macOS may postpone iCloud uploads until a normal connection is available.</p>
+<p><strong>I bought PasteAs Pro but it is still locked.</strong><br>
+Press "Restore Purchases" in the purchase window or in Settings → PasteAs Pro. Make sure you are signed in to the same Apple Account.</p>
+<p><strong>Refunds.</strong><br>
+Purchases are handled by Apple: request a refund at reportaproblem.apple.com.</p>
+<p><strong>Where is my data, and how do I delete it?</strong><br>
+On your Mac, unless you turn on iCloud sync (Settings → Sync): then a copy goes to your own iCloud, never to the developer. "Clear history" in Settings → History erases the items on this Mac. Deleting the app and the folder <code>~/Library/Application Support/PasteAs</code> (or its sandbox container) removes everything. See the <a href="privacy.html">Privacy Policy</a>.</p></div><div data-lang="ru"><h1>Поддержка PasteAs</h1>
+<p><strong>Связь:</strong> <a href="mailto:PasteAs@proton.me">PasteAs@proton.me</a> (отвечаем в течение нескольких дней; укажите версию macOS и что вы делали).</p>
+<h2>Частые вопросы</h2>
+<p><strong>Вставка не работает, запись только копируется.</strong><br>
+PasteAs нажимает ⌘V за вас, а для этого macOS требует разрешение «Универсальный доступ». Откройте Системные настройки → Конфиденциальность и безопасность → Универсальный доступ и включите PasteAs. Без него можно выбрать карточку и нажать ⌘V самому.</p>
+<p><strong>Сочетание клавиш не открывает историю.</strong><br>
+По умолчанию ⇧⌘V. Возможно, те же клавиши использует другое приложение: измените сочетание в Настройках → Горячие клавиши.</p>
+<p><strong>Скриншоты не попадают в историю.</strong><br>
+Включите «Добавлять скриншоты в историю» в Настройках → Основные и выберите папку, куда macOS сохраняет скриншоты, когда приложение попросит.</p>
+<p><strong>Скопированное не сохранилось.</strong><br>
+Пароли из менеджеров паролей и всё, что приложения помечают как секретное, не сохраняется. Проверьте список исключений в Настройках → Правила для приложений и что запись не приостановлена (иконка в строке меню).</p>
+<p><strong>Как посмотреть, отменить или изменить подписку?</strong><br>
+Системные настройки → ваше имя → «Медиа и покупки» → «Подписки», либо кнопка «Управлять подпиской» в PasteAs → Настройки → PasteAs Pro. Бесплатный период и продление обрабатывает Apple.</p>
+<p><strong>Как синхронизировать историю между моими Mac?</strong><br>
+Настройки → Синхронизация → «Синхронизировать через iCloud» на каждом Mac с одним и тем же Apple Account. Синхронизируются недавняя история (в пределах выбранного размера), пинборды, сниппеты и список исключённых приложений. Файлы, пароли и другие секреты никогда не синхронизируются. Удалённые вами записи удаляются и на других ваших Mac.</p>
+<p><strong>Как поделиться пинбордом?</strong><br>
+Включите синхронизацию, затем нажмите правой кнопкой на вкладку пинборда → «Поделиться пинбордом…». Введите email или номер телефона (или выберите контакт), выберите «Может править» или «Только просмотр» и нажмите «Пригласить». Ссылку-приглашение можно отправить кнопками «Скопировать ссылку» или «Сообщения». Другому человеку нужны PasteAs с включённой синхронизацией и PasteAs Pro. Записи, которые вы кладёте в общий пинборд, — копии; оригиналы остаются в вашей истории.</p>
+<p><strong>Как закрыть общий доступ, убрать человека или покинуть общий пинборд?</strong><br>
+Владелец: правая кнопка на вкладке пинборда → «Управление доступом…», там можно убрать человека или нажать «Закрыть общий доступ» (пинборд останется у вас). Участник: правая кнопка на вкладке → «Покинуть пинборд»; он удалится с вашего Mac.</p>
+<p><strong>Что будет с общим пинбордом, когда закончится пробный период?</strong><br>
+PasteAs блокируется: вы не сможете смотреть и менять общие пинборды, пока не купите PasteAs Pro. У людей, с которыми вы делитесь, доступ сохраняется.</p>
+<p><strong>Синхронизация не работает или долго показывает «Синхронизация…».</strong><br>
+Проверьте, что вы вошли в iCloud и в нём есть место. Через ограниченное соединение (например, «Режим модема» iPhone) macOS может откладывать выгрузку в iCloud до появления обычного соединения.</p>
+<p><strong>Я купил PasteAs Pro, но приложение всё ещё заблокировано.</strong><br>
+Нажмите «Восстановить покупки» в окне покупки или в Настройках → PasteAs Pro. Убедитесь, что вы вошли под тем же Apple Account.</p>
+<p><strong>Возврат средств.</strong><br>
+Покупки обрабатывает Apple: запросите возврат на reportaproblem.apple.com.</p>
+<p><strong>Где мои данные и как их удалить?</strong><br>
+На вашем Mac, если вы не включили синхронизацию iCloud (Настройки → Синхронизация): тогда копия идёт в ваш личный iCloud, но никогда не разработчику. «Очистить историю» в Настройках → История стирает записи на этом Mac. Удаление приложения и папки <code>~/Library/Application Support/PasteAs</code> (или её контейнера песочницы) удаляет всё. См. <a href="privacy.html">Политику конфиденциальности</a>.</p></div></main>
+<footer>© 2026 NextGenSystems L.L.C.</footer>
+<script>
+(function(){
+  var saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+  var q=(location.search.match(/lang=(en|ru)/)||[])[1]||(location.hash.match(/^#(en|ru)$/)||[])[1];
+  var lang=q||saved||((navigator.language||'en').slice(0,2)==='ru'?'ru':'en');
+  function set(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('[data-lang]').forEach(function(e){e.classList.toggle('on',e.dataset.lang===l)});
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===l)});
+    try{localStorage.setItem('lang',l)}catch(e){}
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){b.onclick=function(){set(b.dataset.set)}});
+  set(lang);
+})();
+</script></body></html>
